@@ -54,6 +54,8 @@ This automation approach with shift left and micro test planning helps dev, test
  
 ## Non-Functional testing approach
 
+Automating CI/CD pipeline for performance and load testing should be in a near prod environment. Observability and metric tools should be setup to verify the performance under load. Tools for simulating bandwidth, stress, and spike. Dynamic and static security and validation against SLO and SLA should be added to the pipeline. Making the system more predictable under afformentioned condition.
+
 ### Non-Functional testing proposal
 
 ## Shared test environment challenges
