@@ -34,79 +34,11 @@ Shift-left testing[1] is an approach to software testing and system testing in w
 
 Ephemeral testing refers to using short-lived, disposable environments for software testing. These environments are spun up on demand, mimic production systems, and are automatically destroyed after use — making them ideal for rapid, isolated, and cost-efficient testing.
 
-
-   +------------------+
-   |   Developer Code |
-   +------------------+
-            |
-            v
-   +------------------+
-   |   CI/CD Trigger  |
-   +------------------+
-            |
-            v
-   +------------------------------+
-   |  Ephemeral Environment       |
-   | (auto-provisioned, isolated) |
-   +------------------------------+
-            |
-            v
-   +------------------+
-   |     Run Tests    |
-   |  Unit / Int / UI |
-   +------------------+
-            |
-            v
-   +------------------+
-   |   Results & Logs |
-   +------------------+
-            |
-            v
-   +-------------------------+
-   |   Auto Teardown         |
-   | (environment destroyed) |
-   +-------------------------+
-
+![Ephemeral Testing](./ci-cd-workflow.png)
 
 ### Functional testing proposal
-   +------------------+
-   |   Developer Code |
-   +------------------+
-            |
-            v
-   +------------------+
-   |   Build Process  |
-   +------------------+
-            |
-            v
-   +---------------------------+
-   |   Code Quality Scan       |
-   | (linting, style, static   |
-   |  analysis, coverage)      |
-   +---------------------------+
-            |
-            v
-   +---------------------------+
-   | Third-Party Library Scan  |
-   | (dependency check,        |
-   |  vulnerability analysis)  |
-   +---------------------------+
-            |
-            v
-   +------------------+
-   |   Run Tests      |
-   |  Unit / Int / UI |
-   +------------------+
-            |
-            v   
-   +------------------+
-   |   Merge Request  |
-   +------------------+
-            |
-            v   
-   +------------------+
-   |   Deploy/Release |
-   +------------------+
+
+![SDLC](./Software-Development.png)
 
 - Developer Code → pushed to repository.
 - Build Process → compiles and packages the application.
