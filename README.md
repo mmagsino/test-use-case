@@ -1,7 +1,7 @@
 
 # Testing Proposal
 
-A High level technology agnostic approach on testing using a CI/CD practice aimed at automating and streamlining the software development lifecycle. 
+A high level technology agnostic approach on testing using a CI/CD practice aimed at automating and streamlining the software development lifecycle. 
 
 ---
 
