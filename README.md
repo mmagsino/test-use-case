@@ -32,7 +32,7 @@ Shift-left testing[1] is an approach to software testing and system testing in w
 
 ### Ephemeral testing
 
-Ephemeral testing refers to using short-lived, disposable environments for software testing. These environments are spun up on demand, mimic production systems, and are automatically destroyed after use — making them ideal for rapid, isolated, and cost-efficient testing.
+Ephemeral testing refers to using short-lived, disposable environments for software testing. These environments are spun up on demand, mimic production systems, and are automatically destroyed after use — making them ideal for rapid, isolated, and cost-efficient testing. Ephemeral integration and contract testing on API gives us production like validation that is cost efficient with faster feedback.
 
 ![Ephemeral Testing](./ci-cd-workflow.png)
 
