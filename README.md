@@ -1,4 +1,3 @@
-
 # Testing Proposal
 
 A high level technology agnostic approach on testing using a CI/CD practice aimed at automating and streamlining the software development lifecycle. 
@@ -31,10 +30,96 @@ Shift-left testing[1] is an approach to software testing and system testing in w
 
 [Wikipedia](https://en.wikipedia.org/wiki/Shift-left_testing)
 
+### Epehmeral testing
+
+Ephemeral testing refers to using short-lived, disposable environments for software testing. These environments are spun up on demand, mimic production systems, and are automatically destroyed after use — making them ideal for rapid, isolated, and cost-efficient testing.
+
+
+   +------------------+
+   |   Developer Code |
+   +------------------+
+            |
+            v
+   +------------------+
+   |   CI/CD Trigger  |
+   +------------------+
+            |
+            v
+   +------------------------------+
+   |  Ephemeral Environment       |
+   | (auto-provisioned, isolated) |
+   +------------------------------+
+            |
+            v
+   +------------------+
+   |     Run Tests    |
+   |  Unit / Int / UI |
+   +------------------+
+            |
+            v
+   +------------------+
+   |   Results & Logs |
+   +------------------+
+            |
+            v
+   +-------------------------+
+   |   Auto Teardown         |
+   | (environment destroyed) |
+   +-------------------------+
+
+
 ### Functional testing proposal
+   +------------------+
+   |   Developer Code |
+   +------------------+
+            |
+            v
+   +------------------+
+   |   Build Process  |
+   +------------------+
+            |
+            v
+   +---------------------------+
+   |   Code Quality Scan       |
+   | (linting, style, static   |
+   |  analysis, coverage)      |
+   +---------------------------+
+            |
+            v
+   +---------------------------+
+   | Third-Party Library Scan  |
+   | (dependency check,        |
+   |  vulnerability analysis)  |
+   +---------------------------+
+            |
+            v
+   +------------------+
+   |   Run Tests      |
+   |  Unit / Int / UI |
+   +------------------+
+            |
+            v   
+   +------------------+
+   |   Merge Request  |
+   +------------------+
+            |
+            v   
+   +------------------+
+   |   Deploy/Release |
+   +------------------+
 
+- Developer Code → pushed to repository.
+- Build Process → compiles and packages the application.
+- Code Quality Scan → ensures standards, static analysis, and coverage.
+- Third-Party Library Scan → checks dependencies for known vulnerabilities (e.g., via tools like OWASP Dependency-Check, Snyk, or Trivy).
+- Run Tests → executes unit, integration, contract, UI, and end-to-end tests.
+- Review the code by the dev/tester.
+- Deploy/Release → only if all checks pass.
+This diagram highlights how **security** and **quality gates** are integrated into CI/CD pipelines before deployment.
 
+This automation approach with shift left and micro test planning helps dev, tester, BA and other stakeholders aligned with the business objectives on every phase of the software lifecycle. Making sure that the team can adapt to changes with minimal friction. 
 
+ 
 ## Non-Functional testing approach
 
 ### Non-Functional testing proposal
