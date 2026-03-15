@@ -117,7 +117,7 @@ Ephemeral testing refers to using short-lived, disposable environments for softw
 - Deploy/Release → only if all checks pass.
 This diagram highlights how **security** and **quality gates** are integrated into CI/CD pipelines before deployment.
 
-This automation approach with shift left and micro test planning helps dev, tester, BA and other stakeholders aligned with the business objectives on every phase of the software lifecycle. Making sure that the team can adapt to changes with minimal friction. 
+This automation approach with shift left and micro test planning helps dev, tester, BA and other stakeholders aligned with the business objectives on every phase of the software lifecycle. Making sure that the team can adapt to changes with minimal friction and business . 
 
  
 ## Non-Functional testing approach
