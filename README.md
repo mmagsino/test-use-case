@@ -49,7 +49,7 @@ Ephemeral testing refers to using short-lived, disposable environments for softw
 - Deploy/Release → only if all checks pass.
 This diagram highlights how **security** and **quality gates** are integrated into CI/CD pipelines before deployment.
 
-This automation approach with shift left and micro test planning helps dev, tester, BA and other stakeholders aligned with the business objectives on every phase of the software lifecycle. Allowing the team to adapt and evolve to changes with minimal friction. Ephemeral testing using container technology makes testing repeatable as all dependency are bundled and can be test in any environment consistently. Shift left makes testing cost effective as the e2e and ui testing at the top. 
+This automation approach with shift left and micro test planning helps dev, tester, BA and other stakeholders aligned with the business objectives on every phase of the software lifecycle. Allowing the team to adapt and evolve to changes with minimal friction. Ephemeral testing using container technology makes testing repeatable as all dependency are bundled and can be test in any environment consistently. Enforcing code quality scan by automation help developers verify their work without the need for manual review on guidelines and governance. Making review more valuable for the correct implementation of feature and better design. Shift left makes testing cost effective by minimizing the e2e and ui testing. 
 
  
 ## Non-Functional testing approach
