@@ -30,7 +30,7 @@ Shift-left testing[1] is an approach to software testing and system testing in w
 
 [Wikipedia](https://en.wikipedia.org/wiki/Shift-left_testing)
 
-### Epehmeral testing
+### Ephemeral testing
 
 Ephemeral testing refers to using short-lived, disposable environments for software testing. These environments are spun up on demand, mimic production systems, and are automatically destroyed after use — making them ideal for rapid, isolated, and cost-efficient testing.
 
