@@ -59,3 +59,9 @@ Automating CI/CD pipeline for performance and load testing should be in a near p
 ### Non-Functional testing proposal
 ![CI/CD pipeline](./CI_CD-Non-Functional.png)
 ## Shared test environment challenges
+
+### Governance
+
+### Ephemeral testing
+
+### Test data self service or management
